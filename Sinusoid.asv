@@ -1,0 +1,15 @@
+x = -100:100;
+
+dt = 1000;
+dr = 55;
+d1 = sqrt(x .^ x + dt^(2));
+d2 = dr + sqrt(;
+
+c = 3e8;
+t1 = d1 / c;
+t2 = d2 / c;
+
+s1 = 1 * exp(1i * 300 * pi * 1e6 * t1);
+s2 = 1 * exp(1i * 300 * pi * 1e6 * t2);
+r = s1 + s2;
+plot(abs(r));
